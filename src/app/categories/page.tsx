@@ -52,7 +52,10 @@ const Categories = async () => {
                 <span className=" uppercase text-accent font-semibold text-xs sm:text-sm">
                   {blog.fields.tags}
                 </span>
-                <Link href={"#"} className="inline-block my-1">
+                <Link
+                  href={"/blogs-detail/" + blog.sys.id}
+                  className="inline-block my-1"
+                >
                   <h2 className=" font-semibold capitalize text-base sm:text-lg">
                     <span
                       className="bg-gradient-to-r from-accent/50 to-accent/50 bg-[length:0px_6px]
