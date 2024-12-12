@@ -36,7 +36,7 @@ const Categories = async () => {
           <article key={blogs?.id} className="col-span-1 row-span-1 relative">
             <div className="group flex flex-col items-center text-dark">
               <Link
-                href={"#"}
+                href={"/blogs-detail/" + blog.sys.id}
                 className="col-span-4 h-full rounded-xl overflow-hidden"
               >
                 <Image
